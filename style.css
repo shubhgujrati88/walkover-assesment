@@ -1,0 +1,227 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.sctop {
+    background: green;
+    padding: 1em;
+    margin: 1em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 600;
+    color: white;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.main h1 {
+    font-weight: 700;
+    margin: 1em;
+}
+
+.main .caption {
+    margin-bottom: 4em;
+}
+
+.main .box {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: orange;
+    margin: 1em;
+}
+
+.main .box.b1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.main .box.b1 .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main .box.b1 .wrap1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 600px;
+}
+
+.main .box.b1 .wrap1 .inner {
+    margin: 1em;
+    height: 100%;
+    width: 100%;
+    background-color: cyan;
+}
+
+.main .box.b1 .wrap1 .inner.i1 {
+    margin-right: .5em;
+    margin-left: 0em;
+}
+
+.main .box.b1 .wrap1 .inner.i2 {
+    margin-left: .5em;
+    margin-right: 0em;
+}
+
+.main .box.b1 .i3 {
+    width: calc(100% - (1em * 2));
+    height: calc(50% - (1em * 2));
+    margin: 1em;
+    background-color: cyan;
+}
+
+.main .box.b2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.main .box.b2 .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /* align-items: center; */
+}
+
+.main .box.b2 .wrap1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+}
+
+.main .box.b2 .wrap1 .inner {
+    margin: 1em;
+    height: 100%;
+    width: 100%;
+    background-color: cyan;
+}
+
+.main .box.b2 .wrap1 .inner.i1 {
+    margin-right: .5em;
+}
+
+.main .box.b2 .wrap1 .inner.i2 {
+    margin-left: .5em;
+}
+
+.main .box.b2 .i3 {
+    width: calc(100% - (1em * 2));
+    height: calc(50% - (1em * 2));
+    margin: 1em;
+    background-color: cyan;
+}
+
+.main .box.b3 .inner {
+    height: 45%;
+    width: 45%;
+    background-color: cyan;
+    position: absolute;
+}
+
+.main .box.b3 .inner.i1 {
+    top: 1em;
+    left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.main .box.b3 .inner.i2 {
+    top: 1em;
+    right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.main .box.b3 .inner.i3 {
+    bottom: 1em;
+    left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.main .box.b3 .inner.i4 {
+    bottom: 1em;
+    right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.innertext {
+    margin-top: 5.5em;
+    text-align: center;
+    align-items: center;
+}
+
+.adjimg img {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 769px) {
+    .main h1 {
+        font-size: 1.5em;
+    }
+    .main .box.b1 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .main .box.b1 .inner {
+        width: calc(100% - (1em * 2));
+        height: calc(50% - (1em * 2));
+    }
+}
